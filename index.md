@@ -13,7 +13,7 @@ layout: default
       </div>
       <div id="particles-js"></div>
     </div>
-
+<!--
     <div class="index-content">
       <ul class="artical-list">
         {% for post in site.categories.blog %}
@@ -22,7 +22,25 @@ layout: default
           <div class="title-desc">{{ post.description }}</div>
         </li>
         {% endfor %}
+-->
+      {% for cat in site.categories %}
+        {% for post in cat[1] %}
+          <li>
+            <a href="{{ post.url }}" class="title">{{ post.title }}</a>
+            <div class="title-desc">{{ post.description }}</div>
+          </li>
+        {% endfor %}
+      {% endfor %}
+
       </ul>
     </div>
   </div>
 </body>
+
+<!--
+      {% for cat in site.categories %}
+        {% for post in cat[1] %}
+          <h2> {{ post.title }} </h2>
+        {% endfor %}
+      {% endfor %}
+-->      
