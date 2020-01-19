@@ -10,7 +10,7 @@
 > Because nums[0] + nums[1] = 2 + 7 = 9,
 > return [0, 1].`
 
-![avatar](images/leetcode/0001.png)
+![avatar](images/0001.png)
 
     func twoSum(nums []int, target int) []int
 	{
