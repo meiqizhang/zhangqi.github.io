@@ -1,8 +1,8 @@
 ---
 layout:     post
 title:      leetcode-0001 Two Sum.md _post
-category: blog
-description: 写博客这个这么古老的行为，还有必要拿出来说吗，我看有。
+category:  leetcode
+description: leetcodeleetcode
 ---
 
 ![avatar](images/0001.png)
