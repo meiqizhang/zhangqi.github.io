@@ -1,8 +1,8 @@
 permalink: /:title
 
-title: BeiYuu.com
-url: http://beiyuu.com
+title: zhangqi的博客
+url: http://zhangqi.life
 feed: /atom.xml
-author_info: <a href="http://beiyuu.com/">BeiYuu</a>
+author_info: <a href="http://zhangqi.life">zhangqi</a>
 
 theme: jekyll-theme-architect
