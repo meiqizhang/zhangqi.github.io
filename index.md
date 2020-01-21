@@ -9,6 +9,7 @@ layout: default
           <div align="left">
             <ul class="categories-list">
               {% for cat in site.categories %}
+                  {% assign foo = cat[0] %}
                   <a href="{{ cat[0] }}" class="title"> {{ cat[0] }} </a>
                 <h2>24</h2>
               {% endfor %}
