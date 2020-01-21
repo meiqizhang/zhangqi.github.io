@@ -9,10 +9,7 @@ layout: default
           <div align="left">
             <ul class="categories-list">
               {% for cat in site.categories %}
-                {% assign data_struct = "数据结构" %}
-                {% if {{ cat[0] }} == {{ data_struct }} %}
-                  <a href="数据结构" class="title"> 数据结构 </a>
-                {% endif %}
+                  <a href="{{ cat[0] }}" class="title"> {{ cat[0] }} </a>
                 <h2>14</h2>
               {% endfor %}
             </ul>
