@@ -7,10 +7,17 @@ layout: default
     <div class="aside">
       <div class="info-card">
         <div align="left">
+          <!--
           {% for post in site.categories.leetcode %}
              <li>
                <a href="{{ post.url }}" class="title"><font color="red" size="3">{{ post.title }}</font></a>
              </li>
+          {% endfor %}
+          -->
+          {% for post in site.categories.leetcode %}
+            {% for tag in post.tags %}
+              <h2> {{ tag }} </h2>
+            {% endfor %}
           {% endfor %}
         </div>
 
