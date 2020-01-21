@@ -11,8 +11,7 @@ layout: default
           <div align="left">
             <ul class="categories-list">
               {% for cat in site.categories %}
-                <!--li><font size="3" color="red"> {{ cat[0] }} </font></li-->
-                <a href="https://zhangqi.life/leetcode" class="title">{{ cat[0] }}</a>
+                <a href={{ cat[0] }} class="title"><font color="red"> {{ cat[0] }} </font></a>
               {% endfor %}
             </ul>
           </div>
