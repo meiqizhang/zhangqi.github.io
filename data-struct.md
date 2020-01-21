@@ -8,21 +8,6 @@ layout: default
       <div class="info-card">
 
         <div align="left">
-          <!--
-          {% for post in site.categories.leetcode %}
-             <li>
-               <a href="{{ post.url }}" class="title"><font color="red" size="3">{{ post.title }}</font></a>
-             </li>
-          {% endfor %}
-          -->
-          <!--
-          {% for post in site.categories.leetcode %}
-            {% for tag in post.tags %}
-              <li> {{ tag }} ({{tag.size}})</li>
-            {% endfor %}
-          {% endfor %}
-          -->
-
           {% for post in site.categories.leetcode %}
             {% for tag in post.tags %}
               <li> {{tag}} ({{tag.size}})</li>
