@@ -22,9 +22,6 @@ layout: default
             {% endfor %}
           {% endfor %}
           -->
-          {% for tag in site.tags %}
-            <h1> {{ tag[0] }} </h1>
-          {% endfor %}
 
         </div>
         
