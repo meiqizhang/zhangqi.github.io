@@ -9,8 +9,8 @@ layout: default
           <div align="left">
             <ul class="categories-list">
               {% for cat in site.categories %}
-                  {% assign foo = {{ cat[0] }} %}
-                  <li>l{{ foo }}</li>
+                  {% assign foo = "{{ cat[0] }}" %}
+                  <li>xx{{ foo }}</li>
                   {% if foo == "data_struct" %}
                     <a href="数据结构" class="title"> 数据结构 </a>
                   {% else %}
