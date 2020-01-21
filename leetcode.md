@@ -7,14 +7,13 @@ layout: default
     <div class="aside">
       <div class="info-card">
         <div align="left">
-          {% for cat in site.categories %}
-            {% for post in cat[1] %}
-              <li>
-                <a href="{{ post.url }}" class="title"><font color="red" size="3">{{ post.title }}</font></a>
-              </li>
-            {% endfor %}
+          {% for post in site.categories.leetcode %}
+             <li>
+               <a href="{{ post.url }}" class="title"><font color="red" size="3">{{ post.title }}</font></a>
+             </li>
           {% endfor %}
         </div>
+
       </div>
         <div id="particles-js"></div>
       </div>
@@ -29,5 +28,6 @@ layout: default
         {% endfor %}
       </ul>
     </div>
+    
   </div>
 </body>
