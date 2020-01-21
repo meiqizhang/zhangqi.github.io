@@ -11,7 +11,7 @@ layout: default
           <div align="left">
             <ul class="categories-list">
               {% for cat in site.categories %}
-                  <!--a href={{ cat[0] }}} class="title"><font color="red">{{ cat[0] }}</font></a-->
+                  <a href={{ cat[0] }}} class="title"><font color="red">{{ cat[0] }}</font></a>
                   <h1>xx</h1>
               {% endfor %}
             </ul>
