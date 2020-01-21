@@ -12,7 +12,7 @@ layout: default
             <ul class="categories-list">
               {% for cat in site.categories %}
                 <!--li><font size="3" color="red"> {{ cat[0] }} </font></li-->
-                <li>{{ cat[0] }}</li>
+                <a href="{{ post.url }}" class="title">{{ cat[0] }}</a>
               {% endfor %}
             </ul>
           </div>
