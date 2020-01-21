@@ -16,7 +16,7 @@ layout: default
                 {% else %}
                   <a href="{{ cat[0] }}" class="title">{{ cat[0] }}</a>
                 {% endif %}
-                <h2> </h2>
+                <h2>1</h2>
               {% endfor %}
             </ul>
           </div>
