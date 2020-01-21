@@ -16,7 +16,7 @@ layout: default
           -->
           {% for post in site.categories.leetcode %}
             {% for tag in post.tags %}
-              <h2> {{ tag }} </h2>
+              <li> {{ tag }} (tag.size)</li>
             {% endfor %}
           {% endfor %}
         </div>
