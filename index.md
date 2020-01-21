@@ -5,7 +5,7 @@ layout: default
 <body>
   <div class="index-wrapper">
     <div class="aside">
-      <div class="info-card">
+      <div class="info-card" align=“left”>
         <h1></h1>
         <!--
         <a href="http://weibo.com/beiyuu/" target="_blank"><img src="http://www.weibo.com/favicon.ico" alt="" width="25"/></a>
@@ -13,15 +13,10 @@ layout: default
         <a href="http://instagram.com/beiyuu/" target="_blank"><img src="http://d36xtkk24g8jdx.cloudfront.net/bluebar/00c6602/images/ico/favicon.ico" alt="" width="22"/></a>
           -->
          {% for cat in site.categories %}
-          <!--li>
-            <a href="{{ post.url }}" class="title">{{ cat[0] }}</a>
-          </li-->
-        
           {% for post in cat[1] %}
           <li>
             <a href="{{ post.url }}" class="title">{{ post.title }}</a>
           </li>
-            
           {% endfor %}
         {% endfor %}
         
