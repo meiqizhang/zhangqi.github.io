@@ -6,6 +6,7 @@ layout: default
   <div class="index-wrapper">
     <div class="aside">
       <div class="info-card">
+
         <div align="left">
           <!--
           {% for post in site.categories.leetcode %}
@@ -14,11 +15,20 @@ layout: default
              </li>
           {% endfor %}
           -->
+          <!--
           {% for post in site.categories.leetcode %}
             {% for tag in post.tags %}
               <li> {{ tag }} ({{tag.size}})</li>
             {% endfor %}
           {% endfor %}
+          -->
+
+          {% for post in site.categories.leetcode %}
+            {% for tag in post.tags %}
+              <li> {{ tag[0] }} ({{tag[0].size}})</li>
+            {% endfor %}
+          {% endfor %}
+
         </div>
 
       </div>
