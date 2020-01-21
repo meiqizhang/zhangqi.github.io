@@ -16,6 +16,9 @@ layout: default
               {% endfor %}
             </ul>
           </div>
+          <div>
+          <h2>最新文章</h2>
+          </div>
         </div>
       <div id="particles-js">
       </div>
