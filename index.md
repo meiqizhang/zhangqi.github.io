@@ -16,7 +16,7 @@ layout: default
           {% for cat in site.categories %}
             {% for post in cat[1] %}
               <li>
-                <a href="{{ post.url }}" class="title">{{ post.title }}</a>
+                <a href="{{ post.url }}" class="title"><font color="red">{{ post.title }}</font></a>
               </li>
             {% endfor %}
           {% endfor %}
