@@ -11,9 +11,7 @@ layout: default
               {% for cat in site.categories %}
                 {% assign data_struct = "数据结构" %}
                 {% if {{ cat[0] }} == {{ data_struct }} %}
-                  <a href="数据结构" class="title">数据结构</a>
-                {% else %}
-                  <a href="{{ cat[0] }}" class="title">{{ cat[0] }}</a>
+                  <a href="数据结构" class="title"> 数据结构 </a>
                 {% endif %}
                 <h2>2</h2>
               {% endfor %}
