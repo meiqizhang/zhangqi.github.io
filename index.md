@@ -13,7 +13,7 @@ layout: default
                 {% if {{ cat[0] }} == {{ data_struct }} %}
                   <a href="数据结构" class="title"> 数据结构 </a>
                 {% endif %}
-                <h2>2</h2>
+                <h2>3</h2>
               {% endfor %}
             </ul>
           </div>
