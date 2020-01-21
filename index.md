@@ -18,9 +18,9 @@ layout: default
           </li-->
         
           {% for post in cat[1] %}
-          <h2>
+          <li>
             <a href="{{ post.url }}" class="title">{{ post.title }}</a>
-          </h2>
+          </li>
             
           {% endfor %}
         {% endfor %}
