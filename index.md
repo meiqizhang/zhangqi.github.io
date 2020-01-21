@@ -12,6 +12,14 @@ layout: default
         <a href="http://www.douban.com/people/beiyuu/" target="_blank"><img src="http://www.douban.com/favicon.ico" alt="" width="22"/></a>
         <a href="http://instagram.com/beiyuu/" target="_blank"><img src="http://d36xtkk24g8jdx.cloudfront.net/bluebar/00c6602/images/ico/favicon.ico" alt="" width="22"/></a>
           -->
+         {% for cat in site.categories %}
+          {% for post in cat[1] %}
+          <li>
+            <a href="{{ post.url }}" class="title">{{ post.title }}</a>
+          </li>
+          {% endfor %}
+        {% endfor %}
+        
       </div>
       <div id="particles-js"></div>
     </div>
