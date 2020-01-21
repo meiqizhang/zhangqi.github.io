@@ -6,18 +6,21 @@ layout: default
   <div class="index-wrapper">
     <div class="aside">
       <div class="info-card">
-        <h1>zhangqi</h1>
+        <h1></h1>
         <!--
         <a href="http://weibo.com/beiyuu/" target="_blank"><img src="http://www.weibo.com/favicon.ico" alt="" width="25"/></a>
         <a href="http://www.douban.com/people/beiyuu/" target="_blank"><img src="http://www.douban.com/favicon.ico" alt="" width="22"/></a>
         <a href="http://instagram.com/beiyuu/" target="_blank"><img src="http://d36xtkk24g8jdx.cloudfront.net/bluebar/00c6602/images/ico/favicon.ico" alt="" width="22"/></a>
           -->
          {% for cat in site.categories %}
-          <h2> {{ cat[0] }} </h2>
-          {% for post in cat[1] %}
           <!--li>
-            <a href="{{ post.url }}" class="title">{{ post.title }}</a>
+            <a href="{{ post.url }}" class="title">{{ cat[0] }}</a>
           </li-->
+        
+          {% for post in cat[1] %}
+          <h2>
+            <a href="{{ post.url }}" class="title">{{ post.title }}</a>
+          </h2>
             
           {% endfor %}
         {% endfor %}
