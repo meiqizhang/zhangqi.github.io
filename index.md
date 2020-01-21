@@ -15,7 +15,7 @@ layout: default
          {% for cat in site.categories %}
           <h2> {{ cat[0] }} </h2>
           {% for post in cat[1] %}
-          <！--li>
+          <!--li>
             <a href="{{ post.url }}" class="title">{{ post.title }}</a>
           </li-->
             
