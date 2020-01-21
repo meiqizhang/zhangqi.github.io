@@ -13,10 +13,12 @@ layout: default
         <a href="http://instagram.com/beiyuu/" target="_blank"><img src="http://d36xtkk24g8jdx.cloudfront.net/bluebar/00c6602/images/ico/favicon.ico" alt="" width="22"/></a>
           -->
          {% for cat in site.categories %}
+          <h2> {{ cat[0] }} </h2>
           {% for post in cat[1] %}
-          <li>
+          <！--li>
             <a href="{{ post.url }}" class="title">{{ post.title }}</a>
-          </li>
+          </li-->
+            
           {% endfor %}
         {% endfor %}
         
