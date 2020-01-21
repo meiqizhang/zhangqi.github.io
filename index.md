@@ -13,6 +13,7 @@ layout: default
         <a href="http://instagram.com/beiyuu/" target="_blank"><img src="http://d36xtkk24g8jdx.cloudfront.net/bluebar/00c6602/images/ico/favicon.ico" alt="" width="22"/></a>
           -->
         <div align="left">
+          <!--
           {% for cat in site.categories %}
             {% for post in cat[1] %}
               <li>
@@ -20,9 +21,14 @@ layout: default
               </li>
             {% endfor %}
           {% endfor %}
+          -->
+          {% for tag in site.tags %}
+            <h1> {{ tag[0] }} </h1>
+          {% endfor %}
+
         </div>
         
-      </div>
+    </div>
       <div id="particles-js"></div>
     </div>
 
