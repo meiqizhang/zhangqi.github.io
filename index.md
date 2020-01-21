@@ -5,7 +5,6 @@ layout: default
 
 <body>
   <div class="index-wrapper">
-
     <div class="aside">
       <div class="info-card">
           <div align="left">
