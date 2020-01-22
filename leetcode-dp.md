@@ -10,7 +10,6 @@ layout: default
         <div align="left">
           {% for post in site.categories.leetcode %}
             {% for t in post.tags %}
-              <h1>1{{t}}2</h1>
               {% if t == "dp" %}
                 {% assign tags = tags | concat : post.tags | uniq %}
               {% endif %}
