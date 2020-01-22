@@ -6,7 +6,7 @@ layout: default
   <div class="index-wrapper">
     <div class="aside">
       <div class="info-card">
-        {% assign TAG = "数组" %}
+        {% assign TAG = "DFS" %}
         <div align="left">
           {% for post in site.categories.leetcode %}
             {% for t in post.tags %}
