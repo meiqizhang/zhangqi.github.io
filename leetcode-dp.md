@@ -9,7 +9,6 @@ layout: default
 
         <div align="left">
           {% for post in site.categories.leetcode %}
-            <h2>1{{post.tags}}2</h2>
             <!--
             {% for tag in post.tags %}
               <h2>1{{tag}}2</h2>
@@ -19,10 +18,11 @@ layout: default
             {% endfor %}
             -->
           {% endfor %}
-          
+          <!--
           {% for post in posts %}
             <a href="{{ post.url }}" class="title">{{ post.title }}</a>
           {% endfor %}
+          -->
         </div>
 
       </div>
