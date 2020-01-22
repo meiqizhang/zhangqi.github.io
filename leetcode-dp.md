@@ -10,18 +10,9 @@ layout: default
         <div align="left">
           {% for post in site.categories.leetcode %}
             {% for tag in post.tags %}
-              <!--
-               {% assign tags = tags | concat : tag | uniq %}
-               -->
-               <h3>3{{tag}}</h3>
+               <h3>3{{tag}}4</h3>
             {% endfor %}
           {% endfor %}
-          
-          <!--
-          {% for tag in tags %}
-              <h2>1{{tag}}2</h2>
-          {% endfor %}
-          -->
         </div>
 
       </div>
