@@ -9,9 +9,13 @@ layout: default
 
         <div align="left">
           {% for post in site.categories.leetcode %}
-            {% for tag in post.tags %}
-              <a href="{{ post.url }}" class="title">{{ post.title }}</a>
-            {% endfor %}
+            {% if post.tags == "dp" %}
+              {%assign posts = post | concat : post %}
+            {% endif %}
+          {% endfor %}
+          
+          {% for post in posts %}
+            <a href="{{ post.url }}" class="title">{{ post.title }}</a>
           {% endfor %}
         </div>
 
