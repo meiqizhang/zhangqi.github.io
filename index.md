@@ -9,10 +9,8 @@ layout: default
           <div align="left">
             <ul class="categories-list">
               {% for cat in site.categories %}
-                  
-                  {% catpture foo %} {{ cat[0] }} {% endcapture %}
+                  {% catpture foo %}hello world{% endcapture %}
                   <li>11x{{ foo }}</li>
-                  <li>22{{ foo }}</li>
                   {% if foo == "data_struct" %}
                     <a href="数据结构" class="title"> 数据结构 </a>
                   {% else %}
