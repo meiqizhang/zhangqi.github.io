@@ -13,10 +13,13 @@ layout: default
           {% endfor %}
           
           {% for post in site.categories.leetcode %}
-            <li>
-              <a href="{{ post.url }}" class="title">{{ post.title }}</a>
-              <div class="title-desc">{{ post.description }}</div>
-            </li>
+            {% for tag in post.tags %}
+              {% if tag in tags %}
+                <li>
+                  <a href="{{ post.url }}" class="title">{{ post.title }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
           {% endfor %}
             
         </div>
