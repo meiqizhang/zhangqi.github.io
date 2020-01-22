@@ -14,7 +14,7 @@ layout: default
           
           {% for tag in tags %}
             <h3>&nbsp;</h3>
-            <a href="{{ tag }}" class="title">{{ tag }}</a>
+            <a href="leetcode-{{ tag }}" class="title">{{ tag }}</a>
           {% endfor %}
         </div>
 
