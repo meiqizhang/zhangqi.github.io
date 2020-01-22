@@ -10,7 +10,7 @@ layout: default
             <ul class="categories-list">
               {% for cat in site.categories %}
                   {% capture foo %}{{cat[0]}}{% endcapture %}
-                  <li>a{{doo}}b</li>
+                  <li>a{{foo}}b</li>
                   {% if foo == "data_struct" %}
                     <a href="数据结构" class="title"> 数据结构 </a>
                   {% else %}
