@@ -9,7 +9,8 @@ layout: default
           <div align="left">
             <ul class="categories-list">
               {% for cat in site.categories %}
-                  {% assign foo = {{ cat[0] }} %}
+                  
+                  {% catpture foo %} cat[0] {% endcapture%}
                   <li>11x{{ foo }}</li>
                   <li>22{{ foo }}</li>
                   {% if foo == "data_struct" %}
