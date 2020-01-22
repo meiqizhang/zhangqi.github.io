@@ -28,7 +28,7 @@ layout: default
               {% endfor %}
             {% endfor %}
           {% endfor %}
-          ->>
+          ->
         </div>
 
       </div>
