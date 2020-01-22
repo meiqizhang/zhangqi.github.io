@@ -34,13 +34,11 @@ layout: default
     <!-- 正文 -->
     <div class="index-content">
       <ul class="artical-list">
-        {% for cat in site.categories %}
-          {% for post in cat[1] %}
+        {% for post in site.posts %}
             <li>
               <a href="{{ post.url }}" class="title">{{ post.title }}</a>
               <div class="title-desc">{{ post.description }}</div>
             </li>
-          { % endfor %}
         {% endfor %}
       </ul>
     </div>
