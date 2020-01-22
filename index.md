@@ -23,7 +23,8 @@ layout: default
               {% endfor %}
             </ul>
           </div>
-          <div>
+          <div class="new-article>
+          <br/><br/>
           <h2>最新文章</h2>
           </div>
         </div>
