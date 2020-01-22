@@ -12,10 +12,11 @@ layout: default
             {% for t in post.tags %}
               {% if t == "dp" %}
                 {% assign tags = tags | concat : post.tags | uniq %}
+                <a href="{{ post.url }}" class="title">{{ post.title }}</a>
               {% endif %}
             {% endfor %}
           {% endfor %}
-          
+          <!--
           {% for post in site.categories.leetcode %}
             {% for t in post.tags %}
               {% for tag in tags %}
@@ -26,7 +27,7 @@ layout: default
               {% endfor %}
             {% endfor %}
           {% endfor %}
-           
+          ->>
         </div>
 
       </div>
