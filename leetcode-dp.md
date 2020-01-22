@@ -17,6 +17,7 @@ layout: default
               {% for tag in tags %}
                 {% if tag == t %}
                   <a href="{{ post.url }}" class="title">{{ post.title }}</a>
+                  {% break %}
                 {% endif %}
               {% endfor %}
             {% endfor %}
