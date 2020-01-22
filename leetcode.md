@@ -9,6 +9,7 @@ layout: default
 
         <div align="left">
           {% for tag in site.tags %}
+            <h3>&nbsp;</h3>
             <a href="{{ tag[0] }}" class="title">{{ tag[0] }}</a>
           {% endfor %}
         </div>
