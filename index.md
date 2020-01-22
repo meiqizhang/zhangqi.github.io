@@ -32,7 +32,17 @@ layout: default
       </div>
     </div>
     <!-- 正文 -->
-    <div>
+    <div class="index-content">
+      <ul class="artical-list">
+        {% for cat in site.categories %}
+          {% for post in cat[1] %}
+            <li>
+              <a href="{{ post.url }}" class="title">{{ post.title }}</a>
+              <div class="title-desc">{{ post.description }}</div>
+            </li>
+          { % endfor %}
+        {% endfor %}
+      </ul>
     </div>
   </div>
 </body>
