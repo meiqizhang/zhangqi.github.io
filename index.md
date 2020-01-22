@@ -5,7 +5,7 @@ layout: default
 <body>
   <div class="index-wrapper">
     <div class="aside">
-      <div class="info-card" style="color:#00FF00">>
+      <div class="info-card" style="color:#00FF00">
           <div align="left">
             <ul class="categories-list">
               {% for cat in site.categories %}
