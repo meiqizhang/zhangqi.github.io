@@ -13,7 +13,7 @@ layout: default
                   {% capture data_struct %} data_struct   {% endcapture %}
               
                   <li>43{{ foo }}</li>
-                  {% if foo == "data_struct" %}
+                  {% if foo == data_struct %}
                     <a href="数据结构" class="title"> 数据结构 </a>
                   {% else %}
                     <a href="{{ cat[0] }}" class="title"> {{ cat[0] }} </a>
