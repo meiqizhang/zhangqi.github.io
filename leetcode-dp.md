@@ -12,9 +12,12 @@ layout: default
             {% assign tags = tags | concat : post.tags | uniq %}
           {% endfor %}
           
-            {% for tag in tags %}
-               <h3>1{{tag}}4</h3>
-            {% endfor %}
+          {% for post in site.categories.leetcode %}
+            <li>
+              <a href="{{ post.url }}" class="title">{{ post.title }}</a>
+              <div class="title-desc">{{ post.description }}</div>
+            </li>
+          {% endfor %}
             
         </div>
 
