@@ -12,8 +12,7 @@ layout: default
             {% for t in post.tags %}
               {% if t == TAG %}
                 <h3>&nbsp;</h3>
-                <a href="{{ post.url }}" class="title">{{ post.title }}</a>
-                {% break %}
+                <a href="{{ post.url }}" class="title">{{ post.title | replace : "leetcode-", "" }}</a>{% break %}
               {% endif %}
             {% endfor %}
           {% endfor %}
