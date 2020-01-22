@@ -11,6 +11,7 @@ layout: default
               {% for cat in site.categories %}
                   {% assign foo = {{ cat[0] }} %}
                   <li>11x{{ foo }}</li>
+                  <li>22{{ foo }}</li>
                   {% if foo == "data_struct" %}
                     <a href="数据结构" class="title"> 数据结构 </a>
                   {% else %}
