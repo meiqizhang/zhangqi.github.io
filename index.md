@@ -9,6 +9,7 @@ layout: default
           <div align="left">
             <ul class="categories-list">
               {% for cat in site.categories %}
+                 <h3></h3>
                  {% capture show_tag %}{{cat[0]}}{% endcapture %}
                  {% if show_tag == "data_struct" %}
                     <a href="数据结构" class="title"> 数据结构 </a>
@@ -17,7 +18,6 @@ layout: default
                  {% else %}
                     <a href="{{ show_tag }}" class="title"> {{ show_tag }} </a>
                  {% endif %}
-                <h3></h3>
               {% endfor %}
             </ul>
           </div>
