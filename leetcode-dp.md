@@ -14,7 +14,9 @@ layout: default
           
           {% for post in site.categories.leetcode %}
             {% for tag in post.tags %}
-              <h1>{{tag}}</h1>
+              {% if tag in tags %}
+                <h1>{{tag}}</h1>
+              {% endfor %}
             {% endfor %}
             {% for tag in tags %}
                 <h4>{{tag}}</h4>
