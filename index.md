@@ -15,6 +15,8 @@ layout: default
                     <a href="数据结构" class="title"> 数据结构 </a>
                  {% elsif show_tag == "raspberrypi" %}
                     <a href="树莓派" class="title"> 树莓派 </a>
+                 {% elsif show_tag == "netword" %}
+                    <a href="计算机网络" class="title"> 计算机网络 </a>
                  {% else %}
                     <a href="{{ show_tag }}" class="title"> {{ show_tag }} </a>
                  {% endif %}
