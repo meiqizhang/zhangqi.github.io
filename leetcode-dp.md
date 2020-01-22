@@ -17,15 +17,12 @@ layout: default
               {% for tag in tags %}
                 {% if tag == t %}
                   <h1>{{tag}}</h1>
+                  {% assign posts = posts | concat : post %}
                 {% endif %}
               {% endfor %}
             {% endfor %}
-            
-            {% for tag in tags %}
-                <h4>{{tag}}</h4>
-            {% endfor %}
           {% endfor %}
-            
+           
         </div>
 
       </div>
