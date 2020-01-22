@@ -6,29 +6,16 @@ layout: default
   <div class="index-wrapper">
     <div class="aside">
       <div class="info-card">
-
+        {% assign TAG = "dp" %}
         <div align="left">
           {% for post in site.categories.leetcode %}
             {% for t in post.tags %}
-              {% if t == "dp" %}
-                {% assign tags = tags | concat : post.tags | uniq %}
+              {% if t == TAG %}
                 <a href="{{ post.url }}" class="title">{{ post.title }}</a>
                 {% break %}
               {% endif %}
             {% endfor %}
           {% endfor %}
-          <!--
-          {% for post in site.categories.leetcode %}
-            {% for t in post.tags %}
-              {% for tag in tags %}
-                {% if tag == t %}
-                  <a href="{{ post.url }}" class="title">{{ post.title }}</a>
-                  {% break %}
-                {% endif %}
-              {% endfor %}
-            {% endfor %}
-          {% endfor %}
-          -->
         </div>
 
       </div>
@@ -38,11 +25,19 @@ layout: default
     <div class="index-content">
       <ul class="artical-list">
         {% for post in site.categories.leetcode %}
-          <li>
-            <a href="{{ post.url }}" class="title">{{ post.title }}</a>
-            <div class="title-desc">{{ post.description }}</div>
-          </li>
         {% endfor %}
+        
+        {% for post in site.categories.leetcode %}
+          {% for t in post.tags %}
+            {% if t == TAG %}
+              <li>
+                <a href="{{ post.url }}" class="title">{{ post.title }}</a>
+                <div class="title-desc">{{ post.description }}</div>
+              </li>
+              {% break %}
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
       </ul>
     </div>
     
