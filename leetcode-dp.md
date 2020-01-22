@@ -17,7 +17,6 @@ layout: default
               {% for tag in tags %}
                 {% if tag == t %}
                   <h1>{{tag}}</h1>
-                  {% assign posts = posts | concat : post %}
                 {% endif %}
               {% endfor %}
             {% endfor %}
