@@ -9,6 +9,7 @@ layout: default
 
         <div align="left">
           {% for post in site.categories.leetcode %}
+            {% post.tags %}
           {% endfor %}
         </div>
 
