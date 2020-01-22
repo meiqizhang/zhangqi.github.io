@@ -8,9 +8,9 @@ layout: default
       <div class="info-card">
 
         <div align="left">
-          <% for post in site.categories.leetcode %>
-            <% assign tags = tags | concat : post.tags | uniq %>
-          <% endfor %>
+          {% for post in site.categories.leetcode %}
+            <% assign tags = tags | concat : post.tags | uniq %}
+          {% endfor %}
           
           {% for tag in tags %}
             <h3>&nbsp;</h3>
