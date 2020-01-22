@@ -14,7 +14,7 @@ layout: default
                   {% endcapture %}
               
                   <li>11x{{ foo }}</li>
-                  {% if foo == "data_struct" %}
+                  {% if {{ foo }} == "data_struct" %}
                     <a href="数据结构" class="title"> 数据结构 </a>
                   {% else %}
                     <a href="{{ cat[0] }}" class="title"> {{ cat[0] }} </a>
