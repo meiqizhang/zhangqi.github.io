@@ -11,6 +11,7 @@ layout: default
           {% for post in site.categories.leetcode %}
             {% for t in post.tags %}
               {% if t == TAG %}
+                <h3>&nbsp;</h3>
                 <a href="{{ post.url }}" class="title">{{ post.title }}</a>
                 {% break %}
               {% endif %}
