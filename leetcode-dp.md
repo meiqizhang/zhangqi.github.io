@@ -13,6 +13,7 @@ layout: default
               {% if t == "dp" %}
                 {% assign tags = tags | concat : post.tags | uniq %}
                 <a href="{{ post.url }}" class="title">{{ post.title }}</a>
+                {% break %}
               {% endif %}
             {% endfor %}
           {% endfor %}
