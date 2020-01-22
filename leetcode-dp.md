@@ -13,14 +13,7 @@ layout: default
           {% endfor %}
           
           {% for post in site.categories.leetcode %}
-            {% for tag in post.tags %}
-              <!--{% if tag in tags %}
-                <li>
-                  <a href="{{ post.url }}" class="title">{{ post.title }}</a>
-                </li>
-              {% endif %}
-              -->
-            {% endfor %}
+            <h4>{{post.tags}}</h4>
           {% endfor %}
             
         </div>
