@@ -13,8 +13,8 @@ layout: default
           {% endfor %}
           
           {% for post in site.categories.leetcode %}
-            <h4>{{post.tags}}</h4>
             {% for tag in tags %}
+              <h4>{{tag}}</h4>
             {% endfor %}
           {% endfor %}
             
