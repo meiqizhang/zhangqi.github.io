@@ -2,7 +2,7 @@
 layout:     post
 title:      leetcode-0215 重排链表
 category:   leetcode
-tags:       ['链表翻转', '链表']
+tags:       ['链表']
 description:   给定一个单链表 L：L0→L1→…→Ln-1→Ln ，将其重新排列后变为： L0→Ln→L1→Ln-1→L2→Ln-2→...
 
 ---
