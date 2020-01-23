@@ -6,7 +6,6 @@ tags:       ['链表']
 description:   给定一个单链表 L：L0→L1→…→Ln-1→Ln ，将其重新排列后变为： L0→Ln→L1→Ln-1→L2→Ln-2→...
 
 ---
-
 [https://leetcode-cn.com/problems/reorder-list](https://leetcode-cn.com/problems/reorder-list)
 
     给定一个单链表 L：L0→L1→…→Ln-1→Ln ，
