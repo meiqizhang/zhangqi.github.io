@@ -6,6 +6,7 @@ layout: default
   <div class="index-wrapper">
     <div class="aside">
       <div class="info-card">
+          <img src="./images/header.png" />
           <div align="left">
             <ul class="categories-list">
               {% for cat in site.categories %}
