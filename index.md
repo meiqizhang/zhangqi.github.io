@@ -18,6 +18,8 @@ layout: default
                     <a href="树莓派" class="title"> 树莓派 </a>
                  {% elsif show_tag == "network" %}
                     <a href="计算机网络" class="title"> 计算机网络 </a>
+                 {% elsif show_tag == "Distributed-OS" %}
+                    <a href="分布式系统" class="title"> 分布式系统 </a>
                  {% else %}
                     <a href="{{ show_tag }}" class="title"> {{ show_tag }} </a>
                  {% endif %}
