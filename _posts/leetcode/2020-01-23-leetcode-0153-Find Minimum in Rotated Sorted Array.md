@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      leetcode-0153 数组中的第K个最大元素
+title:      leetcode-0153 寻找旋转排序数组中的最小值
 category:   leetcode
 tags:       ['数组', '二分法']
 description:   假设按照升序排序的数组在预先未知的某个点上进行了旋转，请找出其中最小的元素。
