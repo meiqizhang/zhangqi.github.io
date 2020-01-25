@@ -25,4 +25,30 @@ description:   给定一个正整数 n，将其拆分为至少两个正整数的
 <p><strong>说明: </strong>你可以假设&nbsp;<em>n&nbsp;</em>不小于 2 且不大于 58。</p>
 </div>
 </ul>
-==========
+
+
+解析：动态规划，dp[i]表示和为i的拆分数字乘积的最大值。
+
+1. 如果只拆成两部分，则可表示j和i-j两部分，乘积为j * (i - j)
+2. 如果继续拆分，则可表示为j * dp[i-j]
+
+
+	class Solution {
+	public:
+	    int integerBreak(int n)
+	    {
+	        if (n < 1) return 0;
+	        
+	        vector<int> dp(n + 1, 1);
+	        
+	        for (int i = 2; i <= n; i++)
+	        {
+	            for (int j = i -1; j > 0; j--)
+	            {
+	                dp[i] = max(dp[i], max(j * dp[i-j],  j * (i - j)));
+	            }
+	        }
+	        
+	        return dp[n];
+	    }
+	};
