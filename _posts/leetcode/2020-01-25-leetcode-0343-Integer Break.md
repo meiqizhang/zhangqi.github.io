@@ -33,6 +33,7 @@ description:   给定一个正整数 n，将其拆分为至少两个正整数的
 2. 如果继续拆分，则可表示为j * dp[i-j]
 
 
+
 	class Solution {
 	public:
 	    int integerBreak(int n)
