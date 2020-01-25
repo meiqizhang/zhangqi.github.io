@@ -24,7 +24,7 @@ description:   给定一个正整数 n，将其拆分为至少两个正整数的
 </div>
 </ul>
 
-</ul>
+<ul>
 解析：对于任何一个数，它都可以写成1+1+1+...+1，所以一定有解。
 </br>dp[i]表示平方和等于i时的完全平方个数，则状态转移方程为dp[i] = min(dp[i], dp[i-j*j] + 1)
 </br>相似题目参考[https://zhangqi.life/leetcode-0343-Integer-Break](https://zhangqi.life/leetcode-0343-Integer-Break "整数拆分")
