@@ -180,6 +180,7 @@ a.external:hover {
   margin-top: 70%;
   text-align: center;
   width: 100%;
+  color: #fff;
 }
 @media screen and (max-width: 767px) {
   .index-wrapper .info-card {
@@ -196,6 +197,7 @@ a.external:hover {
 }
 .index-wrapper .info-card a {
   margin: 0 15px;
+  color: #fff;
 }
 .index-wrapper .index-content {
   margin-left: 30%;
