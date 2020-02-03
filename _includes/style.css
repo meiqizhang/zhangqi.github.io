@@ -198,6 +198,7 @@ a.external:hover {
 .index-wrapper .info-card a {
   margin: 0 15px;
   color: #fff;
+  font-size: 20px;
 }
 .index-wrapper .index-content {
   margin-left: 30%;
