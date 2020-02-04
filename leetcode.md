@@ -7,7 +7,7 @@ layout: default
     <div class="aside">
       <div class="info-card">
 
-        <div align="left">
+        <div align="left" style="width:auto; height:450px; overflow:auto">
           {% for post in site.categories.leetcode %}
             {% assign tags = tags | concat : post.tags | uniq %}
           {% endfor %}
