@@ -8,7 +8,7 @@ layout: default
       <div class="info-card">
 
         <div align="left">
-          {% for post in site.categories.mysql %}
+          {% for post in site.categories.MySQL %}
             <h3>&nbsp;</h3>
             <a href="{{ post.url }}" class="title">{{ post.title }}</a>
           {% endfor %}
@@ -20,7 +20,7 @@ layout: default
 
     <div class="index-content">
       <ul class="artical-list">
-        {% for post in site.categories.mysql %}
+        {% for post in site.categories.MySQL %}
           <li>
             <a href="{{ post.url }}" class="title">{{ post.title }}</a>
             <div class="title-desc">{{ post.description }}</div>
