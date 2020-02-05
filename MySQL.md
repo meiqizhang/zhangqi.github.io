@@ -7,14 +7,10 @@ layout: default
     <div class="aside">
       <div class="info-card">
 
-        <div align="left" style="width:auto; height:450px; overflow:auto">
-          {% for post in site.categories.leetcode %}
-            {% assign tags = tags | concat : post.tags | uniq %}
-          {% endfor %}
-          
-          {% for tag in tags %}
+        <div align="left">
+          {% for post in site.categories.MySQL %}
             <h3>&nbsp;</h3>
-            <a href="leetcode-{{ tag }}" class="title">{{ tag }}</a>
+            <a href="{{ post.url }}" class="title">{{ post.title }}</a>
           {% endfor %}
         </div>
 
@@ -24,7 +20,7 @@ layout: default
 
     <div class="index-content">
       <ul class="artical-list">
-        {% for post in site.categories.leetcode %}
+        {% for post in site.categories.MySQL %}
           <li>
             <a href="{{ post.url }}" class="title">{{ post.title }}</a>
             <div class="title-desc">{{ post.description }}</div>

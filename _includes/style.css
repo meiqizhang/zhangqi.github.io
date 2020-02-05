@@ -188,7 +188,7 @@ a.external:hover {
   }
 }
 .index-wrapper .info-card h1 {
-  font-size: 40px;
+  font-size: 30px;
   color: #f00;
   margin-bottom: 20px;
   text-shadow: 0 0 80px rgba(255,255,255,0.5);
@@ -198,6 +198,7 @@ a.external:hover {
 .index-wrapper .info-card a {
   margin: 0 15px;
   color: #fff;
+  font-size: 20px;
 }
 .index-wrapper .index-content {
   margin-left: 30%;
@@ -224,7 +225,7 @@ a.external:hover {
 }
 .index-wrapper .title {
   display: block;
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 15px;
   word-break: break-all;
   font-weight: bold;
