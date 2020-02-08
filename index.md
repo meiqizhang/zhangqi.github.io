@@ -18,6 +18,7 @@ layout: default
                 {% else %}
                   <h3>&nbsp;</h3>
                 {% endif %}
+                <h3>{{ index }}</h3>
 
                 {% capture show_tag %}{{cat[0]}}{% endcapture %}
                 {% if show_tag == "data_struct" %}
