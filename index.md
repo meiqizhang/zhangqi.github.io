@@ -12,11 +12,11 @@ layout: default
             <ul class="categories-list">
               {% assign index = 0 %}
               {% for cat in site.categories %}
-                <h3>{{ index }}</h3>
 
                 {% if index == 0 %}
                   {% assign index = 1 %}
-                  <br/>
+                  <br/><br/>
+
                 {% else %}
                   <h3>&nbsp;</h3>
                 {% endif %}
