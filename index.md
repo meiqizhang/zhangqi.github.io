@@ -20,6 +20,8 @@ layout: default
                     <a href="计算机网络" class="title"> 计算机网络 </a>
                  {% elsif show_tag == "Distributed-OS" %}
                     <a href="分布式系统" class="title"> 分布式系统 </a>
+                 {% elsif show_tag == "CPP" %}
+                    <a href="C++" class="title"> C++ </a>
                  {% else %}
                     <a href="{{ show_tag }}" class="title"> {{ show_tag }} </a>
                  {% endif %}
