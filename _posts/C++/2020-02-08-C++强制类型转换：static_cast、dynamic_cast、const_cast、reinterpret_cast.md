@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      C++强制类型转换：static_cast、dynamic_cast、const_cast、reinterpret_cast
-category:   redis
+category:   CPP
 tags:       ['类型转换']
 description:  c++除了能使用c语言的强制类型转换外，还新增了四种强制类型转换：static_cast、dynamic_cast、const_cast、reinterpret_cast，主要运用于继承关系类间的强制转化，语法为：
 ---
