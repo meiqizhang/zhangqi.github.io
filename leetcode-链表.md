@@ -6,6 +6,8 @@ layout: default
   <div class="index-wrapper">
     <div class="aside">
       <div class="info-card">
+        <div id="divcss5"><img src="/images/header.png" width="64px" /></div>
+
         {% assign TAG = "链表" %}
         <div align="left">
           {% for post in site.categories.leetcode %}
