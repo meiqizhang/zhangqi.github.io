@@ -17,7 +17,7 @@ title: 出错啦！
       
       {% for cat in site.categories %}
         {% for post in cat[1] %}
-          <h2> {{ post.title }} </h2>
+          <a href="{{ post.url }}" class="title">{{ post.title }}</a>
         {% endfor %}
       {% endfor %}
 
