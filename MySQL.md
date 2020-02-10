@@ -9,8 +9,14 @@ layout: default
         <div id="divcss5"><img src="/images/header.png" width="64px" /></div>
 
         <div align="left">
+          {% assign index = 0 %}
           {% for post in site.categories.MySQL %}
-            <h3>&nbsp;</h3>
+            {% if index == 0 %}
+              {% assign index = 1 %}
+              <br/><br/>
+            {% else %}
+              <h3>&nbsp;</h3>
+            {% endif %}
             <a href="{{ post.url }}" class="title">{{ post.title }}</a>
           {% endfor %}
         </div>
