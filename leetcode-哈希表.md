@@ -7,13 +7,19 @@ layout: default
     <div class="aside">
       <div class="info-card">
         <div id="divcss5"><img src="/images/header.png" width="64px" /></div>
-        
+
         {% assign TAG = "哈希表" %}
         <div align="left">
+          {% assign index = 0 %}
           {% for post in site.categories.leetcode %}
             {% for t in post.tags %}
               {% if t == TAG %}
-                <h3>&nbsp;</h3>
+                {% if index == 0 %}
+                  {% assign index = 1 %}
+                  <br/><br/>
+                {% else %}
+                  <h3>&nbsp;</h3>
+                {% endif %}
                 <a href="{{ post.url }}" class="title">{{ post.title | replace : "leetcode-", "" }}</a>
                 {% break %}
               {% endif %}
