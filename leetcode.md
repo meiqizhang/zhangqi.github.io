@@ -12,8 +12,15 @@ layout: default
             {% assign tags = tags | concat : post.tags | uniq %}
           {% endfor %}
           
+          {% assign index = 0 %}
           {% for tag in tags %}
-            <h3>&nbsp;</h3>
+            {% if index == 0 %}
+              {% assign index = 1 %}
+              <br/><br/>
+            {% else %}
+              <h3>&nbsp;</h3>
+            {% endif %}
+            
             <a href="leetcode-{{ tag }}" class="title">{{ tag }}</a>
           {% endfor %}
         </div>
