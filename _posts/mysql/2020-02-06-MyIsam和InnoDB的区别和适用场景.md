@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      关于数据库引擎MyIsam和InnoDB的区别和适用场景
+title:      MyIsam和InnoDB的区别和适用场景
 category:   MySQL
 tags:       ['MySQL引擎']
 description:  MySQL有MyISAM和InnoDB两种搜索引擎，那么这两种搜索引擎各有什么优点？怎么选择 
