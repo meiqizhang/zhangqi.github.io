@@ -6,8 +6,7 @@ layout: default
   <div class="index-wrapper">
     <div class="aside">
       <div class="info-card">
-        <div id="divcss5"><img src="/images/header.png" width="64px" /></div>
-        <div><br/><br/></div>
+        <div id="divcss5"><img src="/images/header.png" width="64px" /><br/><br/></div>
         <div align="left" style="width:auto; height:500px; overflow:auto">
           {% for post in site.categories.leetcode %}
             {% assign tags = tags | concat : post.tags | uniq %}
