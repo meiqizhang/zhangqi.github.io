@@ -7,20 +7,14 @@ layout: default
     <div class="aside">
       <div class="info-card">
         <div id="divcss5"><img src="/images/header.png" width="64px" /></div>
+        <div><br/><br/></div>
         <div align="left" style="width:auto; height:500px; overflow:auto">
           {% for post in site.categories.leetcode %}
             {% assign tags = tags | concat : post.tags | uniq %}
           {% endfor %}
           
-          {% assign index = 0 %}
           {% for tag in tags %}
-            {% if index == 0 %}
-              {% assign index = 1 %}
-              <br/><br/>
-            {% else %}
-              <h3>&nbsp;</h3>
-            {% endif %}
-            
+            <h3>&nbsp;</h3>
             <a href="leetcode-{{ tag }}" class="title">{{ tag }}</a>
           {% endfor %}
         </div>
