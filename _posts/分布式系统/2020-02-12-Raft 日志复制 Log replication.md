@@ -7,7 +7,7 @@ description: Raft 是分布式一致性算法，保证的实际上是多台机�
 
 ---
          
-<article class="_2rhmJa"><h2>背景</h2>
+<h2>背景</h2>
 <p>Raft 是分布式一致性算法，保证的实际上是多台机器上数据的一致性，前面说的 leader 选举是为了保证日志复制的一致性。</p>
 <p>简单来说，保证复制日志相同，才是分布式一致性算法的最终任务。</p>
 <p>Leader 选举只是为了保证日志复制相同的辅助工作。实际上，在更为学术的 Paxos 里面，是没有 leader 的概念的（大部分 Paxos 的实现通常会加入 leader 机制提高性能）。</p>
@@ -30,13 +30,9 @@ description: Raft 是分布式一致性算法，保证的实际上是多台机�
 <li>如果 follower 宕机或者运行缓慢或者丢包，领导人会不断的重试，知道所有的 follower 最终都存储了所有的日志条目。</li>
 </ol>
 <p>大概的流程如下图：</p>
-<div class="image-package">
-<div class="image-container" style="max-width: 700px; max-height: 437px; background-color: transparent;">
-<div class="image-container-fill" style="padding-bottom: 62.56%;"></div>
-<div class="image-view" data-width="1154" data-height="722"><img data-original-src="//upload-images.jianshu.io/upload_images/4236553-c9ad172e3f41ea02.png" data-original-width="1154" data-original-height="722" data-original-format="image/png" data-original-filesize="87188" data-image-index="0" style="cursor: zoom-in;" class="" src="//upload-images.jianshu.io/upload_images/4236553-c9ad172e3f41ea02.png?imageMogr2/auto-orient/strip|imageView2/2/w/1154/format/webp"></div>
-</div>
-<div class="image-caption">图 1</div>
-</div>
+
+<img src="./images/分布式系统/2020-02-12-1.png" />
+
 <h5>日志的组成</h5>
 <p>日志的数据结构：</p>
 <ol>
@@ -45,13 +41,9 @@ description: Raft 是分布式一致性算法，保证的实际上是多台机�
 <li>索引：整数索引表示日志条目在日志中位置</li>
 </ol>
 <p>日志结构如下图：</p>
-<div class="image-package">
-<div class="image-container" style="max-width: 700px; max-height: 408px; background-color: transparent;">
-<div class="image-container-fill" style="padding-bottom: 58.41%;"></div>
-<div class="image-view" data-width="1308" data-height="764"><img data-original-src="//upload-images.jianshu.io/upload_images/4236553-466b0d0790cd1e8e.png" data-original-width="1308" data-original-height="764" data-original-format="image/png" data-original-filesize="100707" data-image-index="1" style="cursor: zoom-in;" class="" src="//upload-images.jianshu.io/upload_images/4236553-466b0d0790cd1e8e.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp"></div>
-</div>
-<div class="image-caption">图 2</div>
-</div>
+
+<img src="./images/分布式系统/2020-02-12-2.png" />
+
 <p>上图显示，共有 8 条日志，提交了  7 条。提交的日志都将通过状态机持久化到磁盘中，防止宕机。</p>
 <h5>主从日志的一致性</h5>
 <p>然后谈谈主从日志的一致性问题，这个是分布式一致性算法要解决的根本问题。</p>
@@ -73,13 +65,9 @@ description: Raft 是分布式一致性算法，保证的实际上是多台机�
 <p>即，正常情况下， leader 和 follower 的日志保持一致性，所以附加日志 RPC 的一致性检查从来不会失败（查询上次已提交的日志条目的任期和下标）</p>
 <p>然而，让我们考虑一下 leader 的崩溃：假设老的 leader 还没有完全复制完所有的日志条目，就崩溃了，这将导致 follower 的日志有可能比 leader 的日志多，也可能少，也可能多多少少。。。。</p>
 <p>下图将展示 leader 和 follower 的日志的冲突情况：</p>
-<div class="image-package">
-<div class="image-container" style="max-width: 700px; max-height: 476px;">
-<div class="image-container-fill" style="padding-bottom: 68.08999999999999%;"></div>
-<div class="image-view" data-width="1354" data-height="922"><img data-original-src="//upload-images.jianshu.io/upload_images/4236553-8a3893a9355685c2.png" data-original-width="1354" data-original-height="922" data-original-format="image/png" data-original-filesize="87731" data-image-index="2" style="cursor: zoom-in;" class="image-loading"></div>
-</div>
-<div class="image-caption">图 3</div>
-</div>
+
+<img src="./images/分布式系统/2020-02-12-3.png" />
+
 <p>从上图可以看出，所有的 follower 都和 leader 的日志冲突了，leader 的最后一条日志的任期是 6， 下标是 10 ，而其他 follower 的日志都与 leader 不匹配。</p>
 <p>如何处理？</p>
 <p>Raft 给出了一个方案（补丁）:通过强制 follower 直接复制 leader 的日志解决（意味着 follower 中的和 leader 冲突的日志将被覆盖）。</p>
