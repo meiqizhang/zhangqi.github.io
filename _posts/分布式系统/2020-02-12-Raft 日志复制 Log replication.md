@@ -3,7 +3,7 @@ layout:     post
 title:      Raft 日志复制 Log replication
 category:   Distributed-OS
 tags:       ['分布式理论']
-description:Raft 是分布式一致性算法，保证的实际上是多台机器上数据的一致性，前面说的 leader 选举是为了保证日志复制的一致性。
+description: Raft 是分布式一致性算法，保证的实际上是多台机器上数据的一致性，前面说的 leader 选举是为了保证日志复制的一致性。
 
 ---
          
