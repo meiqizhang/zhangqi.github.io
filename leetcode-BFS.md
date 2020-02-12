@@ -6,20 +6,14 @@ layout: default
   <div class="index-wrapper">
     <div class="aside">
       <div class="info-card">
-        <div id="divcss5"><img src="/images/header.png" width="64px" /></div>
+        <div id="divcss5"><img src="/images/header.png" width="64px" /><br/><br/></div>
 
         {% assign TAG = "BFS" %}
         <div align="left">
-          {% assign index = 0 %}
           {% for post in site.categories.leetcode %}
             {% for t in post.tags %}
               {% if t == TAG %}
-                {% if index == 0 %}
-                  {% assign index = 1 %}
-                  <br/><br/>
-                {% else %}
-                  <h3>&nbsp;</h3>
-                {% endif %}
+                <h3>&nbsp;</h3>
                 <a href="{{ post.url }}" class="title">{{ post.title | replace : "leetcode-", "" }}</a>
                 {% break %}
               {% endif %}
