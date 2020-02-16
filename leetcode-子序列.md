@@ -3,16 +3,25 @@ layout: default
 ---
 
 <body>
+  {% assign TAG = "子序列" %}
+  {% for post in site.categories.leetcode %}
+    {% for t in post.tags %}
+      {% if t == TAG %}
+        {% assign titles = titles | append: post.title | append: "__zhqi__" %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+  {% assign titles = titles | split: "__zhqi__" | sort %}
+
   <div class="index-wrapper">
     <div class="aside">
       <div class="info-card">
         <div id="divcss5"><img src="/images/header.png" width="64px" /><br/><br/></div>
 
-        {% assign TAG = "子序列" %}
         <div align="left">
-          {% for post in site.categories.leetcode %}
-            {% for t in post.tags %}
-              {% if t == TAG %}
+          {% for title in titles %}
+            {% for post in site.categories.leetcode %}
+              {% if title == post.title %}
                 <h3>&nbsp;</h3>
                 <a href="{{ post.url }}" class="title">{{ post.title | replace : "leetcode-", "" }}</a>
                 {% break %}
@@ -27,12 +36,9 @@ layout: default
 
     <div class="index-content">
       <ul class="artical-list">
-        {% for post in site.categories.leetcode %}
-        {% endfor %}
-        
-        {% for post in site.categories.leetcode %}
-          {% for t in post.tags %}
-            {% if t == TAG %}
+        {% for title in titles %}
+          {% for post in site.categories.leetcode %}
+            {% if title == post.title %}
               <li>
                 <a href="{{ post.url }}" class="title">{{ post.title }}</a>
                 <div class="title-desc">{{ post.description }}</div>
