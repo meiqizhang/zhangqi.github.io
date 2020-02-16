@@ -25,10 +25,11 @@ layout: default
     <div class="index-content">
       <ul class="artical-list">
         {% for post in site.categories.leetcode %}
-          {% assign t = post.title | replace : "leetcode-", "zhqi" %}
+          {% assign titles = titles | append:  post.title %}
           <li>{{ t }}</li>
         {% endfor %}
         
+      {{ titles }}
       <!--
         {% for title in titles %}
           {{ title }}
