@@ -25,8 +25,8 @@ layout: default
     <div class="index-content">
       <ul class="artical-list">
         {% for post in site.categories.leetcode %}
-          <li>{{ post.title  }}</li>
-          {% assign tags = tags | concat : post.tags | uniq %}
+          <% assign t = post.title | replace : "leetcode-", "" }} %>
+          <li>{{ t }}</li>
         {% endfor %}
         
       <!--
