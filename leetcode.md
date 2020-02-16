@@ -28,7 +28,7 @@ layout: default
           {assign titles = titles | concat : post.title | uniq %}
         {% endfor %}
 
-        {{ titles | sort }}
+        
 
         {% for title in titles %}
           {% for post in site.categories.leetcode %}
