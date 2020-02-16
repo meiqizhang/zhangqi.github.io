@@ -26,15 +26,13 @@ layout: default
       <ul class="artical-list">
         {% for post in site.categories.leetcode %}
           {% assign titles = titles | append:  post.title %}
-          <li>{{ t }}</li>
         {% endfor %}
         
-      {{ titles }}
-      <!--
+        {% assign titles = titles | split: "leetcode-" %}
+        
         {% for title in titles %}
           {{ title }}
         {% endfor %}
-      -->
         
       <!--
         {% for title in titles %}
