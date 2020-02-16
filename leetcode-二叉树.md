@@ -21,8 +21,9 @@ layout: default
           
           {% assign titles = titles | split: "__zhqi__" | sort %}
 
-          {% for post in site.categories.leetcode %}
-            {% for title in titles %}
+          
+          {% for title in titles %}
+            {% for post in site.categories.leetcode %}
               {% if title == post.title %}
                 <h3>&nbsp;</h3>
                 <a href="{{ post.url }}" class="title">{{ post.title | replace : "leetcode-", "" }}</a>
@@ -38,9 +39,6 @@ layout: default
 
     <div class="index-content">
       <ul class="artical-list">
-        {% for post in site.categories.leetcode %}
-        {% endfor %}
-        
         {% for post in site.categories.leetcode %}
           {% for t in post.tags %}
             {% if t == TAG %}
