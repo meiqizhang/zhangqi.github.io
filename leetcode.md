@@ -30,6 +30,7 @@ layout: default
         {% endfor %}
         
         {% assign titles = titles | split: "__zhqi__" %}
+        {% assign titles = titles | sort %}
         
         {% for title in titles %}
           {% for post in site.categories.leetcode %}
