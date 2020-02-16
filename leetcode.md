@@ -24,11 +24,11 @@ layout: default
 
     <div class="index-content">
       <ul class="artical-list">
-        {% assign tags ="" %>
+        {% assign titles ="" %>
         {% for post in site.categories.leetcode %}
-          {% assign t = post.title | replace : "leetcode-", "" %}
+          {% assign t = post.title | replace : "leetcode-", "#" %}
           <li>{{ t }}</li>
-          {% assign tags = tags | concat : t| uniq %}
+          {% assign titles = titles | append : t %}
         {% endfor %}
         
       <!--
