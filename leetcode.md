@@ -24,9 +24,8 @@ layout: default
 
     <div class="index-content">
       <ul class="artical-list">
-        {% assign titles ="" %>
         {% for post in site.categories.leetcode %}
-          {% assign t = post.title | replace : "leetcode-", "s" %}
+          {% assign t = post.title | replace : "leetcode-", "" %}
           <li>{{ t }}</li>
         {% endfor %}
         
