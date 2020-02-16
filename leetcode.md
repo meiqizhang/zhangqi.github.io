@@ -27,6 +27,8 @@ layout: default
         {% for post in site.categories.leetcode %}
           {% assign t = post.title | replace : "leetcode-", "" %}
           <li>{{ t }}</li>
+          {% assign titles = titles | concat : t | uniq %}
+
         {% endfor %}
         
       <!--
