@@ -25,13 +25,14 @@ layout: default
     <div class="index-content">
       <ul class="artical-list">
         {% for post in site.categories.leetcode %}
-          {% assign titles = titles | concat : post.title %}
+          {{ post.title  }}
         {% endfor %}
         
+      <!--
         {% for title in titles %}
           {{ title }}
         {% endfor %}
-
+      -->
         
       <!--
         {% for title in titles %}
