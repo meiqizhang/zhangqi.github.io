@@ -25,10 +25,10 @@ layout: default
     <div class="index-content">
       <ul class="artical-list">
         {% for post in site.categories.leetcode %}
-          {% assign titles = titles | append:  post.title %}
+          {% assign titles = titles | append:  t %}
         {% endfor %}
         
-        {% assign titles = titles | split: "leetcode-" %}
+        {% assign titles = titles | split: "__zhqi__" %}
         
         {% for title in titles %}
           {% for post in site.categories.leetcode %}
@@ -41,7 +41,7 @@ layout: default
             {% endif %}
           {% endfor %}
         {% endfor %}
-        
+
       </ul>
     </div>
     
