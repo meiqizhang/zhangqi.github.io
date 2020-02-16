@@ -10,9 +10,20 @@ layout: default
 
         {% assign TAG = "二叉树" %}
         <div align="left">
+        
           {% for post in site.categories.leetcode %}
             {% for t in post.tags %}
               {% if t == TAG %}
+                {% assign titles = titles | append: post.title | append: "__zhqi__" %}
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+          
+          {% assign titles = titles | split: "__zhqi__" | sort %}
+
+          {% for post in site.categories.leetcode %}
+            {% for title in titles %}
+              {% if title == post.title %}
                 <h3>&nbsp;</h3>
                 <a href="{{ post.url }}" class="title">{{ post.title | replace : "leetcode-", "" }}</a>
                 {% break %}
