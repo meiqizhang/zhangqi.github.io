@@ -29,8 +29,7 @@ layout: default
           {% assign titles = titles | append: t %}
         {% endfor %}
         
-        {% assign titles = titles | split: "__zhqi__" %}
-        {% assign titles = titles | sort %}
+        {% assign titles = titles | split: "__zhqi__" | sort %}
         
         {% for title in titles %}
           {% for post in site.categories.leetcode %}
