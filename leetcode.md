@@ -29,7 +29,7 @@ layout: default
         {% endfor %}
         
         {% for title in titles %}
-          {{ titles }}
+          {{ title }}
         {% endfor %}
 
         
