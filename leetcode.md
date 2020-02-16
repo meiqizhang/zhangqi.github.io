@@ -31,11 +31,6 @@ layout: default
         {% assign titles = titles | split: "leetcode-" %}
         
         {% for title in titles %}
-          {{ title }}
-        {% endfor %}
-        
-      <!--
-        {% for title in titles %}
           {% for post in site.categories.leetcode %}
             {% if title == post.title %}
               <li>
@@ -46,7 +41,7 @@ layout: default
             {% endif %}
           {% endfor %}
         {% endfor %}
-        -->
+        
       </ul>
     </div>
     
