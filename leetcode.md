@@ -25,7 +25,8 @@ layout: default
     <div class="index-content">
       <ul class="artical-list">
         {% for post in site.categories.leetcode %}
-          {{ post.title  }}
+          <li>{{ post.title  }}</li>
+          {% assign titles = titles | concat : post.title | uniq %}
         {% endfor %}
         
       <!--
