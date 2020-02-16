@@ -25,8 +25,7 @@ layout: default
     <div class="index-content">
       <ul class="artical-list">
         {% for post in site.categories.leetcode %}
-          {% assign t = post.title | append: "__zhqi__" %}
-          {% assign titles = titles | append: t %}
+          {% assign titles = titles | append: post.title | append: "__zhqi__" %}
         {% endfor %}
         
         {% assign titles = titles | split: "__zhqi__" | sort %}
