@@ -3,24 +3,23 @@ layout: default
 ---
 
 <body>
+  {% assign TAG = "二叉树" %}
+  {% for post in site.categories.leetcode %}
+    {% for t in post.tags %}
+      {% if t == TAG %}
+        {% assign titles = titles | append: post.title | append: "__zhqi__" %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+  {% assign titles = titles | split: "__zhqi__" | sort %}
+
   <div class="index-wrapper">
     <div class="aside">
       <div class="info-card">
         <div id="divcss5"><img src="/images/header.png" width="64px" /><br/><br/></div>
 
-        {% assign TAG = "二叉树" %}
         <div align="left">
-        
-          {% for post in site.categories.leetcode %}
-            {% for t in post.tags %}
-              {% if t == TAG %}
-                {% assign titles = titles | append: post.title | append: "__zhqi__" %}
-              {% endif %}
-            {% endfor %}
-          {% endfor %}
-          
-          {% assign titles = titles | split: "__zhqi__" | sort %}
-          
+          {% for title in titles %}
             {% for post in site.categories.leetcode %}
               {% if title == post.title %}
                 <h3>&nbsp;</h3>
@@ -35,7 +34,7 @@ layout: default
         <div id="particles-js"></div>
       </div>
 
-    <div class="index-content">
+    <!--div class="index-content">
       <ul class="artical-list">
         {% for title in titles %}
           {% for post in site.categories.leetcode %}
@@ -49,7 +48,7 @@ layout: default
             {% endfor %}
           {% endfor %}
       </ul>
-    </div>
+    </div -->
     
   </div>
 </body>
