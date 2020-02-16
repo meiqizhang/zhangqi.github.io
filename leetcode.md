@@ -25,11 +25,15 @@ layout: default
     <div class="index-content">
       <ul class="artical-list">
         {% for post in site.categories.leetcode %}
-          {% assign titles = titles | concat : post.title | uniq %}
+          {% assign titles = titles | concat : post.title %}
+        {% endfor %}
+        
+        {% for title in titles %}
+          {{ titles }}
         {% endfor %}
 
         
-
+      <!--
         {% for title in titles %}
           {% for post in site.categories.leetcode %}
             {% if title == post.title %}
@@ -41,6 +45,7 @@ layout: default
             {% endif %}
           {% endfor %}
         {% endfor %}
+        -->
       </ul>
     </div>
     
