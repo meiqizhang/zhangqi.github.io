@@ -34,7 +34,7 @@ layout: default
         <div id="particles-js"></div>
       </div>
 
-    <!--div class="index-content">
+    <div class="index-content">
       <ul class="artical-list">
         {% for title in titles %}
           {% for post in site.categories.leetcode %}
@@ -48,7 +48,7 @@ layout: default
             {% endfor %}
           {% endfor %}
       </ul>
-    </div -->
+    </div>
     
   </div>
 </body>
