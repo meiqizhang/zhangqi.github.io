@@ -10,8 +10,8 @@ Reids 在 Web 应用的开发中使用非常广泛，几乎所有的后端技术
 <h2>BitMap</h2>
 <p>BitMap 就是通过一个 bit 位来表示某个元素对应的值或者状态, 其中的 key 就是对应元素本身，实际上底层也是通过对字符串的操作来实现。Redis 从 2.2 版本之后新增了setbit, getbit, bitcount 等几个 bitmap 相关命令。虽然是新命令，但是本身都是对字符串的操作，我们先来看看语法：</p>
 <pre><code class="hljs bash copyable" lang="bash">SETBIT key offset value
-<span class="copy-code-btn">复制代码</span></code></pre><p>其中 offset 必须是数字，value 只能是 0 或者 1，咋一看感觉没啥用处，我们先来看看 bitmap 的具体表示，当我们使用命令 <code>setbit key (0,2,5,9,12) 1</code>后，它的具体表示为：</p>
-<table>
+</code></pre><p>其中 offset 必须是数字，value 只能是 0 或者 1，咋一看感觉没啥用处，我们先来看看 bitmap 的具体表示，当我们使用命令 <code>setbit key (0,2,5,9,12) 1</code>后，它的具体表示为：</p>
+<table border="1">
 <thead>
 <tr>
 <th>byte</th>
