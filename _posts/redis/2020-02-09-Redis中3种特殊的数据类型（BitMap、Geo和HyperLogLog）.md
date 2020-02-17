@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Redis中3种特殊的数据类型（BitMap、Geo和HyperLogLog）
+title:      3种特殊的数据类型（BitMap、Geo和HyperLogLog）
 category:   redis
 tags:       ['数据类型']
 description: Reids 在 Web 应用的开发中使用非常广泛，几乎所有的后端技术都会有涉及到 Redis 的使用。Redis 种除了常见的字符串 String、字典 Hash、列表 List、集合 Set、有序集合 SortedSet 等等之外，还有一些不常用的数据类型，这里着重介绍三个。下面话不多说了，来一起看看详细的介绍吧。
@@ -11,7 +11,7 @@ Reids 在 Web 应用的开发中使用非常广泛，几乎所有的后端技术
 <p>BitMap 就是通过一个 bit 位来表示某个元素对应的值或者状态, 其中的 key 就是对应元素本身，实际上底层也是通过对字符串的操作来实现。Redis 从 2.2 版本之后新增了setbit, getbit, bitcount 等几个 bitmap 相关命令。虽然是新命令，但是本身都是对字符串的操作，我们先来看看语法：</p>
 <pre><code class="hljs bash copyable" lang="bash">SETBIT key offset value
 </code></pre><p>其中 offset 必须是数字，value 只能是 0 或者 1，咋一看感觉没啥用处，我们先来看看 bitmap 的具体表示，当我们使用命令 <code>setbit key (0,2,5,9,12) 1</code>后，它的具体表示为：</p>
-<table border="5">
+<table border="1" cellspacing="0">
 <thead>
 <tr>
 <th>byte</th>
