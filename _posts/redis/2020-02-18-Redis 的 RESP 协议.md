@@ -6,7 +6,8 @@ tags:       ['协议']
 description: Redis 的客户端和服务端之间采取了一种独立名为 RESP(REdis Serialization Protocol) 的协议，作者主要考虑了以下几个点：1. 容易实现。2.解析快。3.人类可读
 
 ---
-<h1>简介</h1>
+
+#简介
 
 Redis 的客户端和服务端之间采取了一种独立名为 RESP(Redis Serialization Protocol) 的协议，作者主要考虑了以下几个点：
  
