@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Redis 的 RESP 协议
+title:      Redis的RESP协议
 category:   redis
 tags:       ['协议']
 description: Redis 的客户端和服务端之间采取了一种独立名为 RESP(REdis Serialization Protocol) 的协议，作者主要考虑了以下几个点：1. 容易实现。2.解析快。3.人类可读
