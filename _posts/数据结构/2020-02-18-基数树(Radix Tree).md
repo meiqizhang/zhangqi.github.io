@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      C++中七大排序算法
+title:      基数树(Radix Tree)
 category:   data_struct
-tags:       ['排序']
+tags:       ['树']
 description: 对于长整型数据的映射，如何解决Hash冲突和Hash表大小的设计是一个很头疼的问题。radix树就是针对这种稀疏的长整型数据查找，能快速且节省空间地完成映射。借助于Radix树，我们可以实现对于长整型数据类型的路由。利用radix树可以根据一个长整型（比如一个长ID）快速查找到其对应的对象指针。这比用hash映射来的简单，也更节省空间，使用hash映射hash函数难以设计，不恰当的hash函数可能增大冲突，或浪费空间。
 ---
 <h1>1. 基数树概述</h1>
