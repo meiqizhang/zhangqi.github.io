@@ -33,7 +33,7 @@ layout: default
                 {% elsif show_tag == "CPP" %}
                    <a href="C++" class="title"> C++ </a>
                 {% elsif show_tag == "others" %}
-                   <a href="知识盲区 class="title"> 知识盲区 </a>
+                   <a href="知识盲区" class="title"> 知识盲区 </a>
                 {% else %}
                    <a href="{{ show_tag }}" class="title"> {{ show_tag }} </a>
                 {% endif %}
