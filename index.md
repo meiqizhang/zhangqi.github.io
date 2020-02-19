@@ -32,6 +32,8 @@ layout: default
                    <a href="分布式系统" class="title"> 分布式系统 </a>
                 {% elsif show_tag == "CPP" %}
                    <a href="C++" class="title"> C++ </a>
+                {% elsif show_tag == "others" %}
+                   <a href="知识盲区 class="title"> 知识盲区 </a>
                 {% else %}
                    <a href="{{ show_tag }}" class="title"> {{ show_tag }} </a>
                 {% endif %}
