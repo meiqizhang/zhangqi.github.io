@@ -6,8 +6,7 @@ tags:       ['list']
 description: list::splice实现list拼接的功能。将源list的内容部分或全部元素删除，拼插入到目的list。
 ---
 
-list::splice实现list拼接的功能。将源list的内容部分或全部元素删除，拼插入到目的list。
-
+list::splice实现list拼接的功能。将源list的内容部分或全部元素删除，拼插入到目的list。  
 函数有以下三种声明：
 
 	void splice (iterator position, list<T,Allocator>& x);
