@@ -292,6 +292,7 @@ a.external:hover {
 .post-wrapper .post-date {
   text-align: center;
   color: #999;
+  margin-top: 30px;
   margin-bottom: 60px;
   font-size: 14px;
 }
