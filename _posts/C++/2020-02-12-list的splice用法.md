@@ -13,8 +13,8 @@ list::splice实现list拼接的功能。将源list的内容部分或全部元素
 	void splice (iterator position, list<T,Allocator>& x, iterator i);
 	void splice (iterator position, list<T,Allocator>& x, iterator first, iterator last);
 
-解释：
-
+解释： 
+&nbsp;
 position 是要操作的list对象的迭代器  
 list<T Allocator>&x 被剪的对象  
 对于一：会在position后把list<T Allocator>&x所有的元素到剪接到要操作的list对象  
