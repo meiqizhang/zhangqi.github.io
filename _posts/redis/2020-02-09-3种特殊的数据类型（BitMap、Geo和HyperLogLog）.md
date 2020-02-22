@@ -3,7 +3,7 @@ layout:     post
 title:      3种特殊的数据类型（BitMap、Geo和HyperLogLog）
 category:   redis
 tags:       ['数据类型']
-description: Reids 在 Web 应用的开发中使用非常广泛，几乎所有的后端技术都会有涉及到 Redis 的使用。Redis 种除了常见的字符串 String、字典 Hash、列表 List、集合 Set、有序集合 SortedSet 等等之外，还有一些不常用的数据类型，这里着重介绍三个。下面话不多说了，来一起看看详细的介绍吧。
+description: Redis 种除了常见的字符串 String、字典 Hash、列表 List、集合 Set、有序集合 SortedSet 等等之外，还有一些不常用的数据类型，这里着重介绍三个。
 ---
 
 Reids 在 Web 应用的开发中使用非常广泛，几乎所有的后端技术都会有涉及到 Redis 的使用。Redis 种除了常见的字符串 String、字典 Hash、列表 List、集合 Set、有序集合 SortedSet 等等之外，还有一些不常用的数据类型，这里着重介绍三个。</p>
