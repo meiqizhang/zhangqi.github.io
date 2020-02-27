@@ -13,10 +13,9 @@ layout: default
             
               {% for cat in site.categories %}
                 {% capture ca %}{{cat[0]}}{% endcapture %}
-                {% assign categories = categories | append: ca | append: "__zhqi__" %}
+				{{ ca }}
+                <!-- {% assign categories = categories | append: ca | append: "__zhqi__" %} -->
               {% endfor %}
-              
-              {{ categories }}
               <!--
               {% assign categories = categories | split: "__zhqi__" | sort %}
             
