@@ -9,17 +9,16 @@ layout: default
           <div id="divcss5"><img src="/images/header.png" width="64px" /></div>
 
           <div align="left">
-            <ul class="categories-list">
+            <!-- ul class="categories-list">
             
-              <!--
-			  {% for cat in site.categories %}
+              {% for cat in site.categories %}
                   {% assign categories = categories | append: cat[0] | append: "__zhqi__" %}
               {% endfor %}
               
               {{ categories }}
               
               {% assign categories = categories | split: "__zhqi__" | sort %}
-			
+            
               {% assign index = 0 %}
               {% for category in categories %}
                 {% if index == 0 %}
@@ -54,8 +53,7 @@ layout: default
                   {% endif %}
                 {% endfor %}
               {% endfor %}
-			  -->
-            </ul>
+            </ul -->
           </div>
           <div class="new-article">
           <br/><br/>
