@@ -7,7 +7,17 @@ layout: default
     <div class="aside">
       <div class="info-card">
         <div id="divcss5"><img src="/images/header.png" width="64px" /><br/><br/></div>
-        <div align="left" style="width:auto; height:500px; overflow:auto">
+		  <div id="index_tag">
+			<script type="text/javascript">
+		
+				win_height = window.screen.availHeight;
+				var tag = document.getElementById("index_tag");
+				tag.setAttribute("align", "left");
+				var style = "width:auto; height:" + (win_height - 60 - 100 - 400).toString() + "px; overflow:auto";
+				tag.setAttribute("style", style);
+		
+			</script>
+			
           {% for post in site.categories.leetcode %}
             {% assign tags = tags | concat : post.tags | uniq %}
           {% endfor %}
