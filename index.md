@@ -25,7 +25,7 @@ layout: default
                 {% if show_tag == "data_struct" %}
                    <a href="数据结构" class="title"> 数据结构 </a>
                 {% elsif show_tag == "raspberrypi" %}
-                   <a href="树莓派" class="title"> 树莓派 </a>
+                   <a href="树莓派" class="title"> 树莓派实验室 </a>
                 {% elsif show_tag == "network" %}
                    <a href="计算机网络" class="title"> 计算机网络 </a>
                 {% elsif show_tag == "Distributed-OS" %}
