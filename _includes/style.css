@@ -573,5 +573,8 @@ li.L9 {
 }
 
 #divcss5{ margin:32 auto} 
-#divcss5 img{ border-radius:50%} 
-
+#divcss5 img{ 
+	border-radius:50%;
+	width: 100px;
+	height: 100px;
+} 
