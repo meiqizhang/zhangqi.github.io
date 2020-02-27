@@ -10,27 +10,27 @@ layout: default
 
           <div align="left">
             <ul class="categories-list">
-			
-			  % for cat in site.categories %}
-			  	{% assign categories = categories | append: cat[0] | append: "__zhqi__" %}
-			  {% endfor %}
-			  
-			  {{ categories }}
-			  
-			  {% assign categories = categories | split: "__zhqi__" | sort %}
-
+            
+              % for cat in site.categories %}
+                  {% assign categories = categories | append: cat[0] | append: "__zhqi__" %}
+              {% endfor %}
+              
+              {{ categories }}
+              
+              {% assign categories = categories | split: "__zhqi__" | sort %}
+			<!--
               {% assign index = 0 %}
-			  {% for category in categories %}
-			    {% if index == 0 %}
-                    {% assign index = 1 %}
-                    <br/><br/>
-                  {% else %}
-                    <h3>&nbsp;</h3>
-                  {% endif %}
-				  
+              {% for category in categories %}
+                {% if index == 0 %}
+                  {% assign index = 1 %}
+                  <br/><br/>
+                {% else %}
+                  <h3>&nbsp;</h3>
+                {% endif %}
+                  
                 {% for cat in site.categories %}
                   {% capture show_tag %}{{cat[0]}}{% endcapture %}
-				  {% if show_tag == category %}
+                  {% if show_tag == category %}
                     {% if show_tag == "data_struct" %}
                        <a href="数据结构" class="title"> 数据结构 </a>
                     {% elsif show_tag == "raspberrypi" %}
@@ -41,18 +41,19 @@ layout: default
                        <a href="分布式系统" class="title"> 分布式系统 </a>
                     {% elsif show_tag == "CPP" %}
                        <a href="C++" class="title"> C++ </a>
-				    {% elsif show_tag == "cv" %}
+                    {% elsif show_tag == "cv" %}
                        <a href="图像识别" class="title"> 图像识别 </a>
-				    {% elsif show_tag == "recommend" %}
+                    {% elsif show_tag == "recommend" %}
                        <a href="推荐系统" class="title"> 推荐系统 </a>
                     {% elsif show_tag == "others" %}
                        <a href="知识盲区" class="title"> 知识盲区 </a>
                     {% else %}
                        <a href="{{ show_tag }}" class="title"> {{ show_tag }} </a>
                     {% endif %}
-				  {% endif %}
+                  {% endif %}
                 {% endfor %}
-			  {% endfor %}
+              {% endfor %}
+			  -->
             </ul>
           </div>
           <div class="new-article">
