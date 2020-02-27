@@ -23,7 +23,7 @@ layout: default
 
                 {% capture show_tag %}{{cat[0]}}{% endcapture %}
                 {% if show_tag == "data_struct" %}
-                   <a href="数据结构" class="title"> 数据结构 </a>
+                   <a href="_categories/数据结构" class="title"> 数据结构 </a>
                 {% elsif show_tag == "raspberrypi" %}
                    <a href="树莓派" class="title"> 树莓派实验室 </a>
                 {% elsif show_tag == "network" %}
