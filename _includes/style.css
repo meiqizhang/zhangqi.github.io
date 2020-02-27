@@ -177,7 +177,7 @@ a.external:hover {
 }
 .index-wrapper .info-card {
   position: absolute;
-  margin-top: 20%;
+  margin-top: 60px;
   text-align: center;
   width: 100%;
   color: #fff;
@@ -201,7 +201,7 @@ a.external:hover {
   font-size: 20px;
 }
 .index-wrapper .index-content {
-  margin-left: 30%;
+  margin-left: 20%;
   padding-top: 80px;
   padding-right: 15%;
 }
