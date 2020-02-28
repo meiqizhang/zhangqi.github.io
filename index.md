@@ -11,11 +11,12 @@ layout: default
           <div align="left">
             <ul class="categories-list">
             
-			  {% assign categories = "" %}
+			  {% assign xx = "" %}
               {% for cat in site.categories %}
                 {% assign categories = categories | append: cat[0] | append: "__zhqi__" %}
+				{% capture xx %}{{categories}}{% endcapture %}
               {% endfor 
-			  {{ categories }}
+			  {{ xx }}
               <!--
               {% assign categories = categories | split: "__zhqi__" | sort %}
             
