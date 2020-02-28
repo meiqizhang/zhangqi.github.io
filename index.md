@@ -7,13 +7,13 @@ layout: default
     <div class="aside">
       <div class="info-card">
           <div id="divcss5"><img src="/images/header.png" /></div>
-
+          <br/><br/>
           <div align="left" id="index_tag">
             <script type="text/javascript">
               win_height = window.screen.availHeight;
               var tag = document.getElementById("index_tag");
               tag.setAttribute("align", "left");
-              var style = "width:auto; height:" + (win_height - 60 - 100 - 400).toString() + "px; overflow:auto";
+              var style = "width:auto; height:" + ((1 - 0.3-0.1) * win_height).toString() + "px; overflow:auto";
               tag.setAttribute("style", style);
             </script>
             <ul class="categories-list">
@@ -23,15 +23,7 @@ layout: default
 
               {% assign categories = categories | split: "__zhqi__" | sort %}
 
-              {% assign index = 0 %}
               {% for category in categories %}
-                {% if index == 0 %}
-                  {% assign index = 1 %}
-                  <br/><br/>
-                {% else %}
-                  <h3>&nbsp;</h3>
-                {% endif %}
-
                 {% for cat in site.categories %}
                   {% capture show_tag %}{{cat[0]}}{% endcapture %}
                   {% if show_tag == category %}
@@ -57,6 +49,7 @@ layout: default
                     {% break %}
                   {% endif %}
                 {% endfor %}
+                <h3>&nbsp;</h3>
               {% endfor %}
             </ul>
           </div>
