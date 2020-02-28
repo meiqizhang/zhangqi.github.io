@@ -9,11 +9,17 @@ layout: default
           <div id="divcss5"><img src="/images/header.png" /></div>
 
           <div align="left">
-
+            <ul class="categories-list">
+              {% for cat in site.categories %}
+                {% assign categories = categories | append: cat[0] | append: "__zhqi__" %}
+              {% endfor }
+              {{ categories }}
+            </ul>
           </div>
+
           <div class="new-article">
-          <br/><br/>
-          <h2>最新文章</h2>
+            <br/><br/>
+            <h2>最新文章</h2>
           </div>
         </div>
       <div id="particles-js">
