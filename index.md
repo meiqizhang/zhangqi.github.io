@@ -14,6 +14,7 @@ layout: default
               {% for cat in site.categories %}
                 {% capture ca %}{{cat[0]}}{% endcapture %}
                 {% assign categories = categories | append: ca | append: "__zhqi__" %}
+				<li>{{ ca }}</li>
               {% endfor 
 			  {{ categories }}
               <!--
@@ -52,8 +53,7 @@ layout: default
                     {% endif %}
                   {% endif %}
                 {% endfor %}
-              {% endfor %}
-              -->
+              {% endfor %} -->
             </ul>
           </div>
           <div class="new-article">
