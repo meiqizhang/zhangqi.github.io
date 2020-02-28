@@ -10,14 +10,12 @@ layout: default
 
           <div align="left">
             <ul class="categories-list">
-            
               {% for cat in site.categories %}
                 {% assign categories = categories | append: cat[0] | append: "__zhqi__" %}
               {% endfor %}
-             {{ categories }}
-              <!--
+
               {% assign categories = categories | split: "__zhqi__" | sort %}
-            
+
               {% assign index = 0 %}
               {% for category in categories %}
                 {% if index == 0 %}
@@ -26,7 +24,7 @@ layout: default
                 {% else %}
                   <h3>&nbsp;</h3>
                 {% endif %}
-                  
+
                 {% for cat in site.categories %}
                   {% capture show_tag %}{{cat[0]}}{% endcapture %}
                   {% if show_tag == category %}
@@ -51,7 +49,7 @@ layout: default
                     {% endif %}
                   {% endif %}
                 {% endfor %}
-              {% endfor %} -->
+              {% endfor %}
             </ul>
           </div>
           <div class="new-article">
