@@ -11,6 +11,7 @@ layout: default
           <div align="left">
             <ul class="categories-list">
             
+			  {% assign categories = "" %}
               {% for cat in site.categories %}
                 {% assign categories = categories | append: cat[0] | append: "__zhqi__" %}
               {% endfor 
