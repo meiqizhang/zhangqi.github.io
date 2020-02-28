@@ -12,7 +12,7 @@ layout: default
             <ul class="categories-list">
               {% for cat in site.categories %}
                 {% assign categories = categories | append: cat[0] | append: "__zhqi__" %}
-              {% endfor }
+              {% endfor %}
               {{ categories }}
             </ul>
           </div>
