@@ -8,7 +8,14 @@ layout: default
       <div class="info-card">
           <div id="divcss5"><img src="/images/header.png" /></div>
 
-          <div align="left">
+          <div align="left" id="index_tag">
+            <script type="text/javascript">
+              win_height = window.screen.availHeight;
+              var tag = document.getElementById("index_tag");
+              tag.setAttribute("align", "left");
+              var style = "width:auto; height:" + (win_height - 60 - 100 - 400).toString() + "px; overflow:auto";
+              tag.setAttribute("style", style);
+            </script>
             <ul class="categories-list">
               {% for cat in site.categories %}
                 {% assign categories = categories | append: cat[0] | append: "__zhqi__" %}
