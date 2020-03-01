@@ -77,6 +77,17 @@ layout: default
         <div>
             <iframe name="" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" width="100%" height="250" src="/calendar.html"></iframe> 
         </div>
+        <div class="new-article" align="center">
+            <br><br>
+            <h3>最新文章</h3>
+            {% for cat in site.categories %}
+                {% for post in cat[1] %}
+                    <li>
+                    <a href="{{ post.url }}" class="title">{{ post.title }}</a>
+                    </li>
+                {% endfor %}
+            {% endfor %}
+         </div>
      </div>
       
       
