@@ -72,5 +72,13 @@ layout: default
         {% endfor %}
       </ul>
     </div>
+    
+    <div class="right-info-card">
+        <div>
+            <iframe name="" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" width="100%" height="250" src="/calendar.html"></iframe> 
+        </div>
+     </div>
+      
+      
   </div>
 </body>
