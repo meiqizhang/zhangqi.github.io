@@ -134,7 +134,7 @@
     var oday = document.querySelector('.day');
     var oLi = document.querySelectorAll('.day li');
     var curDate = new Date();
-    oYear.innerHTML = curDate.getFullYear() + "-" + (curDate.getMonth() + 1);
+    oYear.innerHTML = curDate.getFullYear() + "年" + (curDate.getMonth() + 1) + "月";
     // 对函数的封装应该考虑掺入的参数，大小类型等
     function eachFor(start, end, callback){
         for(var i = start; i <= end ; i++){
