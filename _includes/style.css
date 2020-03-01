@@ -204,9 +204,8 @@ a.external:hover {
 .index-wrapper .right-info-card {
   position: absolute;
   margin-left: 80%;
-  top: 60px;
-  
-  width: 15%;
+  top: 30px;
+  width: 250px;
 }
 @media screen and (max-width: 767px) {
   .index-wrapper .right-info-card {
