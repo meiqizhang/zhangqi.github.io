@@ -200,6 +200,21 @@ a.external:hover {
   color: #fff;
   font-size: 20px;
 }
+
+.index-wrapper .right-info-card {
+  position: absolute;
+  margin-left: 80%;
+  top: 60px;
+  
+  width: 15%;
+}
+@media screen and (max-width: 767px) {
+  .index-wrapper .right-info-card {
+    margin-left: 0;
+    padding-right: 0;
+  }
+}
+
 .index-wrapper .index-content {
   margin-left: 20%;
   padding-top: 80px;
