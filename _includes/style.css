@@ -202,20 +202,26 @@ a.external:hover {
 }
 
 .index-wrapper .right-info-card {
-  position: absolute;
-  margin-left: 80%;
-  top: 30px;
-  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 80%;
+  width: 20%;
+  height: 100%;
+  max-width: 500px;
+  background: #aabb;
 }
+
 @media screen and (max-width: 767px) {
   .index-wrapper .right-info-card {
-    margin-left: 0;
-    padding-right: 0;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    max-width: none;
   }
 }
 
 .index-wrapper .index-content {
-  margin-left: 20%;
+  margin-left: 10%;
   padding-top: 80px;
   padding-right: 15%;
 }
