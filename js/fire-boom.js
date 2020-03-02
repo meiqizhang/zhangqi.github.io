@@ -1,4 +1,3 @@
-  <script type="text/javascript"> 
 /*烟花特效*/
 class Circle {
   constructor({ origin, speed, color, angle, context }) {

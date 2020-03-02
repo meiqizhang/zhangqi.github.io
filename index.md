@@ -3,6 +3,12 @@ layout: default
 ---
 
 <body>
+  <script src="/js/fire-boom.js"></script>
+  <script>
+    const cursorSpecialEffects = new CursorSpecialEffects()
+    cursorSpecialEffects.init()
+  </script>
+
   <div class="index-wrapper">
     <div class="aside">
       <div class="info-card">
