@@ -4,6 +4,8 @@ layout: default
 
 <body>
   <script src="/js/fire-boom.js"></script>
+  <script src="/js/dynamic-scrollbarl.js"></script>
+
   <script>
     const cursorSpecialEffects = new CursorSpecialEffects()
     cursorSpecialEffects.init()
@@ -15,13 +17,6 @@ layout: default
           <div id="divcss5"><img src="/images/header.png" /></div>
           <br/><br/>
           <div align="left" id="index_tag">
-            <script type="text/javascript">
-              win_height = window.screen.availHeight;
-              var tag = document.getElementById("index_tag");
-              tag.setAttribute("align", "left");
-              var style = "width:auto; height:" + ((1 - 0.3-0.1) * win_height).toString() + "px; overflow:auto";
-              tag.setAttribute("style", style);
-            </script>
             <ul class="categories-list">
               {% for cat in site.categories %}
                 {% assign categories = categories | append: cat[0] | append: "__zhqi__" %}
