@@ -4,7 +4,6 @@ layout: default
 
 <body>
   <script src="/js/fire-boom.js"></script>
-  <script src="/js/dynamic-scrollbarl.js"></script>
 
   <script>
     const cursorSpecialEffects = new CursorSpecialEffects()
@@ -17,6 +16,7 @@ layout: default
           <div id="divcss5"><img src="/images/header.png" /></div>
           <br/><br/>
           <div align="left" id="index_tag">
+            <script src="/js/dynamic-scrollbarl.js"></script>
             <ul class="categories-list">
               {% for cat in site.categories %}
                 {% assign categories = categories | append: cat[0] | append: "__zhqi__" %}
