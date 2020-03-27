@@ -56,9 +56,15 @@ layout: default
               {% endfor %}
             </ul>
           </div>
+          <br/>
           <div class="new-article">
-          <br/><br/>
-          <h2>最新文章</h2>
+            <a href="https://blog.csdn.net/zhangqi_gsts">
+            <img src="https://csdnimg.cn/public/favicon.ico" style="border-radius:50%; width: 32px">
+            </a>
+  
+            <a href="https://github.com/meiqizhang">
+              <img src="https://github.githubassets.com/favicon.ico" style="border-radius:50%; width: 32px">
+            </a>
           </div>
         </div>
       <div id="particles-js">
