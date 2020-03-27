@@ -59,7 +59,7 @@ layout: default
           <br/>
           <div class="new-article">
             <a href="https://blog.csdn.net/zhangqi_gsts">
-            <img src="https://csdnimg.cn/public/favicon.ico" style="border-radius:50%; width: 32px">
+            <img src="https://raw.githubusercontent.com/meiqizhang/zhangqi.github.io/master/images/csdn.ico" style="border-radius:50%; width: 32px">
             </a>
   
             <a href="https://github.com/meiqizhang">
