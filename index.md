@@ -30,8 +30,6 @@ layout: default
                 {% for cat in site.categories %}
                   {% capture show_tag %}{{cat[0]}}{% endcapture %}
                   {% if show_tag == category %}
-                    {{ category }}
-                  
                     {% if show_tag == "data_struct" %}
                        <a href="数据结构" class="title"> 数据结构 </a>
                     {% elsif show_tag == "raspberrypi" %}
@@ -51,7 +49,6 @@ layout: default
                     {% else %}
                        <a href="{{ show_tag }}" class="title"> {{ show_tag }} </a>
                     {% endif %}
-                    <h3>&nbsp;</h3>
                     {% break %}
                   {% endif %}
                 {% endfor %}
