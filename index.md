@@ -60,7 +60,7 @@ layout: default
           <div class="new-article">
 
             <a chass ="" href="https://blog.csdn.net/zhangqi_gsts">
-              <img src="./images/wechat.jpg" style="border-radius:50%; width: 32px">
+              <img src="./images/wechat.png" style="border-radius:50%; width: 32px">
             </a>
 
             <a chass ="" href="https://blog.csdn.net/zhangqi_gsts">
