@@ -58,13 +58,19 @@ layout: default
           </div>
           <br/>
           <div class="new-article">
-            <a href="https://blog.csdn.net/zhangqi_gsts">
-            <img src="./images/csdn.ico" style="border-radius:50%; width: 32px">
+
+            <a chass ="" href="https://blog.csdn.net/zhangqi_gsts">
+              <img src="./images/weichat.jpg" style="border-radius:50%; width: 32px">
+            </a>
+
+            <a chass ="" href="https://blog.csdn.net/zhangqi_gsts">
+              <img src="./images/csdn.ico" style="border-radius:50%; width: 32px">
             </a>
   
-            <a href="https://github.com/meiqizhang">
+            <a chass ="" href="https://github.com/meiqizhang">
               <img src="https://github.githubassets.com/favicon.ico" style="border-radius:50%; width: 32px">
             </a>
+            
           </div>
         </div>
       <div id="particles-js">
