@@ -50,10 +50,10 @@ layout: default
                     {% else %}
                        <a href="{{ show_tag }}" class="title"> {{ show_tag }} </a>
                     {% endif %}
+                    <h3>&nbsp;</h3>
                     {% break %}
                   {% endif %}
                 {% endfor %}
-                <h3>&nbsp;</h3>
               {% endfor %}
             </ul>
           </div>
