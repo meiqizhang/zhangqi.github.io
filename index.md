@@ -29,8 +29,9 @@ layout: default
               {% for category in categories %}
                 {% for cat in site.categories %}
                   {% capture show_tag %}{{cat[0]}}{% endcapture %}
-                  {{ category }}
                   {% if show_tag == category %}
+                    {{ category }}
+                  
                     {% if show_tag == "data_struct" %}
                        <a href="数据结构" class="title"> 数据结构 </a>
                     {% elsif show_tag == "raspberrypi" %}
