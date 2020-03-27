@@ -60,15 +60,15 @@ layout: default
           <div class="new-article">
 
             <a chass ="" href="https://blog.csdn.net/zhangqi_gsts">
-              <img src="./images/wechat.ico" style="border-radius:50%; width: 32px">
+              <img src="./images/wechat.ico" style="border-radius:0%; width: 24px">
             </a>
 
             <a chass ="" href="https://blog.csdn.net/zhangqi_gsts">
-              <img src="./images/csdn.ico" style="border-radius:50%; width: 32px">
+              <img src="./images/csdn.ico" style="border-radius:50%; width: 24px">
             </a>
   
             <a chass ="" href="https://github.com/meiqizhang">
-              <img src="https://github.githubassets.com/favicon.ico" style="border-radius:50%; width: 32px">
+              <img src="https://github.githubassets.com/favicon.ico" style="border-radius:0%; width: 24px">
             </a>
 
           </div>
