@@ -21,6 +21,8 @@ layout: default
               {% for cat in site.categories %}
                 {% assign categories = categories | append: cat[0] | append: "__zhqi__" %}
               {% endfor %}
+              {% assign categories = categories | append: "myleetcode" | append: "__zhqi__" %}
+
 
               {% assign categories = categories | split: "__zhqi__" | sort %}
 
