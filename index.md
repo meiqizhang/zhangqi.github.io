@@ -60,7 +60,7 @@ layout: default
           <div class="new-article">
 
             <a chass ="" href="https://blog.csdn.net/zhangqi_gsts">
-              <img src="./images/weichat.jpg" style="border-radius:50%; width: 32px">
+              <img src="./images/wechat.jpg" style="border-radius:50%; width: 32px">
             </a>
 
             <a chass ="" href="https://blog.csdn.net/zhangqi_gsts">
@@ -70,7 +70,7 @@ layout: default
             <a chass ="" href="https://github.com/meiqizhang">
               <img src="https://github.githubassets.com/favicon.ico" style="border-radius:50%; width: 32px">
             </a>
-            
+
           </div>
         </div>
       <div id="particles-js">
