@@ -49,6 +49,7 @@ layout: default
                     {% else %}
                        <a href="{{ show_tag }}" class="title"> {{ show_tag }} </a>
                     {% endif %}
+                    <br/>
                     {% break %}
                   {% endif %}
                 {% endfor %}
