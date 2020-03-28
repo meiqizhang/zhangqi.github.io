@@ -58,19 +58,20 @@ layout: default
           </div>
           <br/>
           <div class="new-article">
+            <p>
+              <a chass ="" href="https://blog.csdn.net/zhangqi_gsts">
+                <img src="./images/wechat.ico" style="border-radius:0%; width: 24px">
+              </a>
 
-            <a chass ="" href="https://blog.csdn.net/zhangqi_gsts">
-              <img src="./images/wechat.ico" style="border-radius:0%; width: 24px">
-            </a>
-
-            <a chass ="" href="https://blog.csdn.net/zhangqi_gsts">
-              <img src="./images/csdn.ico" style="border-radius:50%; width: 24px">
-            </a>
+              <a chass ="" href="https://blog.csdn.net/zhangqi_gsts">
+                <img src="./images/csdn.ico" style="border-radius:50%; width: 24px">
+              </a>
   
-            <a chass ="" href="https://github.com/meiqizhang">
-              <img src="https://github.githubassets.com/favicon.ico" style="border-radius:0%; width: 24px">
-            </a>
-
+              <a chass ="" href="https://github.com/meiqizhang">
+                <img src="https://github.githubassets.com/favicon.ico" style="border-radius:0%; width: 24px">
+              </a>
+            </p>
+            <p><i><font size="1px"> 90后拼的是自驱</font></i></p>
           </div>
         </div>
       <div id="particles-js">
